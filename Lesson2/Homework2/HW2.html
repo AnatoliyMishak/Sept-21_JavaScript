@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
+    // (в першу, другу, третю или четверту частину години).
+
+    // let time = +prompt('Enter number between 1 and 59');
+    // if (time <=15){
+    //     document.write('First quarter');
+    // }else if (time >15 && time <=30){
+    //     document.write('Second quarter');
+    // }else if (time >30 && time<=45){
+    //     document.write('Third quarter');
+    // }else if (time >45 && time <60) {
+    //     document.write('Fourth quarter');
+    // }else{
+    //     document.write('You are an idiot - enter number between 1 and 59');
+    // }
+
+    // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
+
+    // let day = +prompt('Enter number between 1 and 31');
+    // if (day <=10){
+    //     document.write('First decade');
+    // }else if (day >10 && day <=20){
+    //     document.write('Second decade');
+    // }else if (day >20 && day<=31){
+    //     document.write('Third decade');
+    // }else{
+    //     document.write('Again YOU? - enter number between 1 and 31 asshole');
+    // }
+
+    // У нас є змінна test, якщо  не дорівнює true, виведіть 'Вірно', інакше виведіть 'Неправильно'.
+    //     Перевірте роботу скрипта при test, що дорівнює true, false. Напишіть два варіанти скрипта - з коротким записом(тернаркою)
+
+    // let test = 'true';
+    // if (test !== 'true') {
+    //     console.log('Вірно')
+    // }else{
+    //     console.log('Неправильно')
+    // }
+    // ---Дві тернарки нижче---
+
+    // let test = prompt('Enter text');
+    // (test !== 'true') ? document.write('Вірно') : document.write('Неправильно');
+
+    // let test2 = 'not true';
+    // (test2 !== 'true') ? console.log('Вірно') : console.log('Неправильно');
+
+    // - Якщо змінна a не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
+
+    // let a = +prompt('Enter your happy number');
+    // if (a !== 0){
+    //     console.log('Вірно')
+    // }else{
+    //     console.log('Невірно')
+    // }
+
+    // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день.
+
+
+    let daynumber = +prompt('Enter day number of the week from 1 to 7');
+    switch (daynumber) {
+        case 1 :
+            console.log('Понеділок день важкий - ВІДПОЧИВАТИ');
+            break;
+        case 2:
+            console.log('У вівторок поцілую разів сорок - КОХАТИСЬ');
+            break;
+        case 3:
+            console.log('У середу підем разом по череду - ПРАЦЮВАТИ');
+            break;
+        case 4:
+            console.log('Починаємо готуватись до пятниці - ПЛАН НА ВИХІДНІ');
+            break;
+        case 5:
+            console.log('Перезвонити друзям, щоб ввечері зібратись - БУХАТИ');
+            break;
+        case 6:
+            console.log('сон до обіду - БОДУН ПІСЛЯ ВЧОРАШНЬОГО');
+            break;
+        case 7:
+            console.log('У церкву на ЛІТУРГІЮ');
+
+    }
+
+
+    // - Потрібно визначити Високосний рік чи ні. Високосні роки діляться націло на 4.
+
+    // let year = +prompt('Enter year');
+    // if ((year % 4) === 0){
+    //     document.write("Високосний рік")
+    // }else(
+    //     document.write('НЕ високосний рік')
+    // )
+
+    //   - Використовуючи конструкцію if..else, напишіть код, який запитуватиме: „Яка «офіційна» назва JavaScript?“
+    // Якщо користувач вводить «ECMAScript», то показати: «Правильно!», інакше – відобразити: «Не знаєте? ECMAScript!
+
+
+    // let name = prompt('Яка "офіційна" назва JavaScript');
+    //   if (name === 'ECMAScript'){
+    //     document.write('«Правильно!»')
+    // }else{
+    //     document.write('«Не знаєте? ECMAScript!»')
+    // }
+
+</script>
+
+</body>
+</html>
