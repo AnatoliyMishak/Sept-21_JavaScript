@@ -23,6 +23,10 @@
     // }else {
     //     console.log('Число позитивне')
     // }
+    // -----Тернарка-----
+
+    // let num = +prompt('Enter number from -100 to 100');
+    // (num > -100 && num <0) ? console.log('Число відємне') : (num === 0) ? console.log('Число - 0') : (num > 0 && num <= 100) ? console.log('Число позитивне') : console.log('Невірна умова');
 
     // - Нам дано масив друзів let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"]; Потрібно зробити перевірку якщо
     // кількість елементів у масиві більше або дорівнює 3, то виводиться повідомлення про те, що це великий масив, в якому  3 і більше елементи.
@@ -46,12 +50,25 @@
     // let result;
     // (a+b<4)? document.write('Мало') : document.write('Багато');
 
-    let array = [2, 5, 3];
-    let max = Math.max.apply(null, array);
-    let min = Math.min.apply(null, array);
-    if ('number'< max && 'number'>min){
-        console.log('number')
-    }else {'Якась фігня'}
+    // - Маємо 3 числа і між ним  нам потрібно знайти те що посередині.
+    //     Знайти, яке з них є середнім (більше одного, але менше за інше). Перевірити, чи знаходиться перше число між двома іншими.
+
+    let fnum = + prompt('Введіть перше значення');
+    let snum = + prompt('Введіть друге значення');
+    let tnum = + prompt('Введіть третє значення');
+    let nmax = Math.max(fnum, snum, tnum);
+    let nmin = Math.min(fnum, snum, tnum);
+    if(fnum > nmin && fnum < nmax){
+        console.log(fnum)
+    }else if (snum > nmin && snum < nmax){
+        console.log(snum)
+    }else if (tnum > nmin && tnum < nmax){
+        console.log(tnum)
+    }else{
+        alert('Числа не мають співпадати')
+    }
+
+
 </script>
 
 </body>
