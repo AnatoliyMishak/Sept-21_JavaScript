@@ -80,36 +80,36 @@
 
     //
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
-let lastArray = [
-    {id : 1234,
-        name: 'Tolik',
-        age: 37
-    },
-    {
-        id: 3446,
-        name: 'Vanya',
-        age: 23
-    },
-    {
-        id: 9876,
-        name: 'Masha',
-        age: 33
-    },
-    {
-        id: 4235,
-        name: 'Regina',
-        age: 9
-    }
-
-];
-function arrayOfcontacts(array){
-
-document.write(`<div>`);
-    for (const item of array) {
-        document.write(`<div>${item.id} - ${item.name} - ${item.age}</div>`);
-    }
-document.write(`</div>`);
-
-}
-arrayOfcontacts(lastArray);
+// let lastArray = [
+//     {id : 1234,
+//         name: 'Tolik',
+//         age: 37
+//     },
+//     {
+//         id: 3446,
+//         name: 'Vanya',
+//         age: 23
+//     },
+//     {
+//         id: 9876,
+//         name: 'Masha',
+//         age: 33
+//     },
+//     {
+//         id: 4235,
+//         name: 'Regina',
+//         age: 9
+//     }
+//
+// ];
+// function arrayOfcontacts(array){
+//
+// document.write(`<div>`);
+//     for (const item of array) {
+//         document.write(`<div>${item.id} - ${item.name} - ${item.age}</div>`);
+//     }
+// document.write(`</div>`);
+//
+// }
+// arrayOfcontacts(lastArray);
 
