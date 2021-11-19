@@ -129,8 +129,8 @@
 let array = [2, 3, 4, 5, 6, 7, 8];
 function showArray (arrayB){
     let reverseArray = [];
-    for (let t = reverseArray.length - 1, ri = 0; t >= 0; t--, ri++) {
-        reverseArray[ri] = reverseArray[t]
+    for (let t = array.length - 1, ri = 0; t >= 0; t--, ri++) {
+        reverseArray[ri] = array[t]
     } return reverseArray;
 }
 let result = showArray(array);
