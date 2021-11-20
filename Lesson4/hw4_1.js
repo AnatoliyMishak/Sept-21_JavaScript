@@ -79,13 +79,13 @@
 //
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
-let array = [
-    {id: 234, name: 'pupkin', age: 35},
-    {id: 543, name: 'dulin', age: 32},
-    {id: 987, name: 'mykhalych', age: 45}
-]
-function contacts(arrayS){
-    for (let items of arrayS) {
-        document.write(`<div>${items.id} - ${items.name} - ${items.age}</div>`);
-    }
-} contacts(array);
+// let array = [
+//     {id: 234, name: 'pupkin', age: 35},
+//     {id: 543, name: 'dulin', age: 32},
+//     {id: 987, name: 'mykhalych', age: 45}
+// ]
+// function contacts(arrayS){
+//     for (let items of arrayS) {
+//         document.write(`<div>${items.id} - ${items.name} - ${items.age}</div>`);
+//     }
+// } contacts(array);
