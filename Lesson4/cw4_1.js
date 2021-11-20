@@ -53,17 +53,20 @@
 
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 
-let avrArray = [45, 23, 56, 24, 45, 11];
-function avrNum(array){
-    let average = 0;
-    for (let numbers of array) {
-        average = average + numbers/array.length
-    }return average;
-}
-let result = avrNum(avrArray);
-console.log(result);
+// let avrArray = [45, 23, 56, 24, 45, 11];
+// function avrNum(array){
+//     let average = 0;
+//     for (let numbers of array) {
+//         average = average + numbers/array.length
+//     }return average;
+// }
+// let result = avrNum(avrArray);
+// console.log(result);
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+
+
+
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
