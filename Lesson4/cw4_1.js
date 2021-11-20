@@ -28,20 +28,41 @@
 
 // - створити функцію яка повертає найменьше число з масиву
 
-let minArray = [45, 23, 56, 24, 45, 11];
-function minNumber(array){
-    let min = array[0];
-    for (let number of array) {
-        if(number < min){
-            min = number
-        }
-    }return min
-}
-let result = minNumber(minArray);
-console.log(result);
+// let minArray = [45, 23, 56, 24, 45, 11];
+// function minNumber(array){
+//     let min = array[0];
+//     for (let number of array) {
+//         if(number < min){
+//             min = number
+//         }
+//     }return min
+// }
+// let result = minNumber(minArray);
+// console.log(result);
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+
+// let summArray = [45, 23, 56, 24, 45, 11];
+// function summNumber(array){
+//     let total = 0;
+//     for (let number of array) {
+//         total = total + number
+//     }return total;
+// }let result = summNumber(summArray);
+// console.log(result)
+
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+
+let avrArray = [45, 23, 56, 24, 45, 11];
+function avrNum(array){
+    let average = 0;
+    for (let numbers of array) {
+        average = average + numbers/array.length
+    }return average;
+}
+let result = avrNum(avrArray);
+console.log(result);
+
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
