@@ -65,9 +65,47 @@
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 
-
+// let array = [22, 44, 55, 12, 65, 76, 45, 98];
+// function showMinMax(arr) {
+// let max = array[0];
+// let min = array[0];
+//     for (let number of arr) {
+//         if (number > max) {
+//             max = number;}
+//         if (number < min) {
+//             min = number; }
+//         } console.log(max);
+//         return min;
+// }
+// showMinMax(array)
 
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+
+// function showRandomArray(arr){
+//     for (let t = 0; t < 20; t++){
+//         arr[t] = Math.round(Math.random()*100)
+//     }return arr
+// }
+// console.log(showRandomArray([]))
+
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+
+// function showRandomArray(arr, limit){
+//     for (let t = 0; t < 100; t++){
+//         arr[t] = Math.round(Math.random()*limit)
+//     }return arr
+// }
+// console.log(showRandomArray([], 5000))
+
+
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+// let array = [2, 3, 4, 5];
+// function showRevArray(arr){
+//     let newArr = [];
+//         for (let i = arr.length - 1, t=0; i >= 0; i--, t++) {
+//         newArr[t] = arr[i];
+//
+//     }return newArr;
+// }console.log(showRevArray(array))
