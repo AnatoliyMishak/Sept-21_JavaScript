@@ -5,6 +5,10 @@
 // }
 // let result = calcRect(5, 9);
 // console.log(result);
+
+let calcRect = (a, b) => a * b;
+console.log(calcRect(5, 9));
+
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 
 // function calcRingS(rad){
@@ -15,6 +19,12 @@
 // let resultS = Math.round(calcRingS(8));
 // console.log(resultS);
 
+let calcRingS = (pi, r) => {
+    let rad = r**2;
+    return pi * rad;
+}
+console.log(Math.round(calcRingS(3.14, 6)));
+
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r - 2piRH
 
 // function calcCyl(h, r){
@@ -23,6 +33,9 @@
 // }
 // let result = Math.round(calcCyl(4, 6));
 // console.log(result);
+
+let calcCyl = (pi, h, r) => 2 * pi * h * r;
+console.log(calcCyl(3.14, 4, 6));
 
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
@@ -35,12 +48,27 @@
 // }
 // funcArr(array);
 
+let array = ['qwrq', 'qweqwe']
+let funcArr = (array) => {
+    for (const item of array) {
+        console.log(item)
+    }
+}
+funcArr(array);
+
+
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
 // function showPag(text){
 //     document.write(`<p>${text}</p>`)
 //     }
 // showPag('hello okten')
+
+let showPag = (text) => {
+    document.write(`<p>${text}</p>`)
+    }
+showPag('hello okten')
+
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
@@ -53,6 +81,15 @@
 // }
 // showUl('Privet')
 
+let showUl = (text) => {
+    document.write(`<ul>`);
+    document.write(`<li>${text}</li>`);
+    document.write(`<li>${text}</li>`);
+    document.write(`<li>${text}</li>`);
+    document.write(`</ul>`);
+}
+showUl('Privet')
+
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
 // function showUl(text, quantity){
@@ -63,6 +100,15 @@
 //     document.write(`</ul>`);
 // }
 // showUl('Privet', 5);
+
+let showUl2= (text, quantity) => {
+    document.write(`<ul>`);
+    for (let i = 0; i < quantity; i++) {
+    document.write(`<li>${text}</li>`);
+            }
+    document.write(`</ul>`);
+}
+showUl2('Vse na barikady', 5);
 
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
@@ -76,6 +122,16 @@
 //     document.write(`</ul>`)
 // }
 // arraylist(array)
+
+let array1 = [2, 4, 5, 'privet', true, 'kak dela', false];
+let arraylist = (arrayS) => {
+    document.write(`<ul>`)
+    for (let items of array1) {
+        document.write(`<li>${items}</li>`);
+    }
+    document.write(`</ul>`)
+}
+arraylist(array1)
 //
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
@@ -89,3 +145,15 @@
 //         document.write(`<div>${items.id} - ${items.name} - ${items.age}</div>`);
 //     }
 // } contacts(array);
+
+let array2 = [
+    {id: 234, name: 'pupkin', age: 35},
+    {id: 543, name: 'dulin', age: 32},
+    {id: 987, name: 'mykhalych', age: 45}
+]
+let contacts = (arrayS1) => {
+    for (let items of arrayS1) {
+        document.write(`<div>${items.id} - ${items.name} - ${items.age}</div>`);
+    }
+}
+contacts(array2);
