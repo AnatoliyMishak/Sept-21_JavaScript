@@ -49,8 +49,7 @@ let maxNumber = (array) => {
         }
     }return max
 }
-let result = maxNumber(maxArray);
-console.log(result);
+console.log(maxNumber(maxArray));
 
 // - створити функцію яка повертає найменьше число з масиву
 
@@ -113,8 +112,8 @@ let avrArray = [45, 23, 56, 24, 45, 11];
 let avrNum = (array) => {
     let average = 0;
     for (let numbers of array) {
-        average = average + numbers/array.length
-    }return average;
+        average = average + numbers
+    }return average/array.length;
 }
 console.log(avrNum(avrArray));
 
@@ -136,8 +135,8 @@ console.log(avrNum(avrArray));
 
 let array4 = [22, 44, 55, 12, 65, 76, 45, 98];
 let showMinMax = (arr) => {
-let max = array4[0];
-let min = array4[0];
+let max = arr[0];
+let min = arr[0];
     for (let number of arr) {
         if (number > max) {
             max = number;}
