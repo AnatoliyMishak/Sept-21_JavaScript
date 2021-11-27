@@ -37,15 +37,15 @@ console.log(array2);
 
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. відфільтрувати  його за допомоги filter, залишивши тільки парні числа
 let array3 = randomArray([]);
-array3.filter(value => value % 2 === 0);
-console.log(array3);
+let a = array3.filter(value => value % 2 === 0);
+console.log(a);
 
 
 // - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
 
 let array4 = randomArray([]);
-array4.map(value => value.toString());
-console.log(array4);
+let b = array4.map(value => value.toString());
+console.log(b);
 
 
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
