@@ -110,7 +110,7 @@ class prince{
 }
 let prince1 = new prince('tolik', 37, 37)
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
-let couple = (cynderella, prince1) =>{
+let couple = (cynderellaArray, prince1) =>{
     for (let item of cynderellaArray) {
         if(item.footsize === prince1.highhillssize){
             return `Your couple - ${item.name}`;
@@ -118,7 +118,7 @@ let couple = (cynderella, prince1) =>{
     else return 'your couple is Vasya'
     }
 }
-console.log(couple(cynderella(), prince1))
+console.log(couple(cynderellaArray, prince1))
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
 
