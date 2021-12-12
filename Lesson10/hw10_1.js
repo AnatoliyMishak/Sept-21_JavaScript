@@ -78,3 +78,15 @@ for (let comment of comments) {
 commentsDiv.append(titleElement, bodyElement, btn)
     document.body.appendChild(commentsDiv)
 }
+
+//===========================================================================================
+
+let checkoutAge = document.forms.checkout_age;
+checkoutAge.onsubmit = function (e){
+    e.preventDefault();
+    if (+this.userAge.value < 18){
+        alert('kjhasdkfjhasd')
+    } else{
+        alert('Welcome')
+    }
+}
