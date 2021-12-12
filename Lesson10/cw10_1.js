@@ -69,3 +69,14 @@ btn4.onclick = function (){
 //     Потрібно перевіряти чи не містить ціле речення в собі погані слова.
 //     Кинути алерт з попередженням у випадку якщо містить.
 //     Перевірку робити при натисканні на кнопку
+
+// let badWordsArray = ['паскуда', 'гута', 'європеєць']
+// let btn4 = document.getElementById('btn4');
+// btn4.onclick = function (){
+//     let badWord = document.getElementById('bad').value;
+//     for (let word of badWordsArray) {
+//         if (badWord.includes(word)) {
+//             alert('Ах ти шалунішка!!!!')
+//         }
+//     }
+// }
