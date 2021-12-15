@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!--// Стилизация проекта - -->
+<!--// index.html - все блоки с user - по 2 в ряд. кнопки/ссылки находяться под информацией про user.-->
+<style>
+*{
+   margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+.users{
+    width: 1200px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 5px solid firebrick;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: bisque;
+}
+
+.userId{
+    width: 45%;
+    height: 200px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 5px solid chocolate;
+    margin: 20px;
+    border-radius: 10px;
+    background: #fcf3f3;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+
+    }
+.userId:hover{
+    transition: 2s;
+    transform: rotateY(6grad);
+}
+    a{
+        text-decoration: none;
+
+}
+
+    .userId>h3,h4{
+        font-size: 35px;
+        margin-top: 13px;
+    }
+
+.userBtnClass{
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    background: aqua;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+</style>
+
+<body>
+
+<div class="users"></div>
+
+<script src="project_index.js"></script>
+
+</body>
+</html>
