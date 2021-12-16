@@ -22,9 +22,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
         userBtn.innerHTML = '<a href="user-details.html" target="_blank">User details</a>'
             userBtn.onclick = function (e){
             e.preventDefault();
-                let userInfo = JSON.parse(localStorage.getItem('userInfo')) || [];
-                userInfo.push(userElement);
-                localStorage.setItem('userInfo', JSON.stringify(userInfo));
+                localStorage.setItem('userInfo', JSON.stringify(userElement.id));
+                window.location.href = 'user-details.html'
             }
 
             userIdDIv.appendChild(userBtn)
@@ -39,12 +38,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
 //
 //
-// На странице user-details.html:
-// 4 Вывести всю, без исключения, информацию про объект user на кнопку/ссылку которого был совершен клик ранее.
-// 5 Добавить кнопку "post of current user", при клике на которую, появляются title всех постов текущего юзера
-// (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
-// 6 Каждому посту добавить кнопку/ссылку, при клике на которую происходит переход на страницу post-details.html,
-// которая имеет детальную информацию про текущий пост.
+
 //
 // На странице post-details.html:
 // 7 Вывести всю, без исключения, информацию про объект post на кнопку/ссылку которого был совершен клик ранее.
