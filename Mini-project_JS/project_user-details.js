@@ -85,6 +85,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
                         .then((response) => response.json())
                         .then((posts) => {
                             for (let postElement of posts) {
+                                let htmlDivElement = document.createElement('div');
+                                htmlDivElement.classList.add('htmlDivElement')
                                 let postsDiv = document.createElement('div');
                                 postsDiv.classList.add('postsDiv')
                                 postsDiv.innerText = `${postElement.title}`
@@ -97,17 +99,19 @@ fetch('https://jsonplaceholder.typicode.com/users')
                                     window.location.href = 'post-details.html'
                                 }
 
-
-                                userInfoBtnDiv.append(postsDiv, postDetailsBtn)
+                                htmlDivElement.append(postsDiv, postDetailsBtn)
+                                // userInfoBtnDiv.append(postsDiv, postDetailsBtn)
+                                userInfoBtnDiv.append(htmlDivElement)
                                 userInfoBtn.disabled = true;
+                                userInfoBtn.style.display = 'none'
                             }
                         })
                 }
 
-                userInfoBtnDiv.appendChild(userInfoBtn)
+                // userInfoBtnDiv.appendChild(userInfoBtn)
                 companyDiv.appendChild(companyUl)
                 userAddressDiv.appendChild(userAddressList)
-                userContainerDiv.append(userIdDiv, userAddressDiv, phoneDiv, companyDiv, userInfoBtnDiv)
+                userContainerDiv.append(userIdDiv, userAddressDiv, phoneDiv, companyDiv, userInfoBtnDiv, userInfoBtn)
             }
         }
 
