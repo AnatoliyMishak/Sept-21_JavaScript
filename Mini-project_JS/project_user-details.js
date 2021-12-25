@@ -29,7 +29,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
                 let userAddressList = document.createElement('ul');
                 userAddressList.classList.add('userAddressList')
-                userAddressList.innerText = 'User address:'
+                userAddressList.innerHTML = '<h3>User address:</h3>'
 
                 for (let key in jsonElement.address) {
                     if (typeof jsonElement.address[key] === 'string' && jsonElement.address[key] !== jsonElement.address.geo) {
@@ -42,7 +42,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                         geoDiv.classList.add('geoDiv')
                         let geoUl = document.createElement('ul');
                         geoUl.classList.add('geoUl')
-                        geoUl.innerText = 'GeoLocation:'
+                        geoUl.innerHTML = '<h4>GeoLocation:</h4>'
 
                         for (let geoKey in jsonElement.address.geo) {
                             let geoList = document.createElement('li');
@@ -65,7 +65,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                 companyDiv.classList.add('companyDiv')
                 let companyUl = document.createElement('ul');
                 companyUl.classList.add('companyUl')
-                companyUl.innerText = 'Company info:'
+                companyUl.innerHTML = '<h3>Company info:</h3>'
 
                 for (let companyKey in jsonElement.company) {
                     let companyInfoList = document.createElement('li');
