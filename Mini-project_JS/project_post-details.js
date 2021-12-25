@@ -8,27 +8,42 @@ let postContainerDiv = document.getElementsByClassName('postContainer')[0];
 
 fetch('https://jsonplaceholder.typicode.com/posts')
     .then((response) => response.json())
-    .then((userPost) =>{
+    .then((userPost) => {
         let postDetails = JSON.parse(localStorage.getItem('postDetails'))
 
         for (let postItem of userPost) {
-            if(postDetails === postItem.id){
+            if (postDetails === postItem.id) {
                 let postDetailsDiv = document.createElement('div');
                 postDetailsDiv.classList.add('postDetails')
 
                 let postDetailsIdDiv = document.createElement('div');
                 postDetailsIdDiv.classList.add('postDetailsId')
-                postDetailsIdDiv.innerText = `ID: ${postItem.id}`
+                postDetailsIdDiv.innerHTML = `<h2>ID: ${postItem.id}</h2>`
 
                 let postDetailsTitleDiv = document.createElement('div');
                 postDetailsTitleDiv.classList.add('postDetailsTitle')
-                postDetailsTitleDiv.innerText = `${postItem.title}`
+                postDetailsTitleDiv.innerHTML = `<h2>${postItem.title}</h2>`
 
                 let postDetailsBodyDiv = document.createElement('div');
                 postDetailsBodyDiv.classList.add('postDetailsBody')
                 postDetailsBodyDiv.innerText = `${postItem.body}`
 
-                postDetailsDiv.append(postDetailsIdDiv, postDetailsTitleDiv, postDetailsBodyDiv)
+                let commentsDiv = document.createElement('div');
+                commentsDiv.classList.add('commentsDiv');
+
+                fetch('https://jsonplaceholder.typicode.com/posts/' + postItem.id + '/comments')
+                    .then((response) => response.json())
+                    .then((comments) => {
+                        for (let commentElement of comments) {
+                            let commentElementDiv = document.createElement('div');
+                            commentElementDiv.classList.add('commentElement')
+                            commentElementDiv.innerText = `Comment: 
+                                                            ${commentElement.body}`
+                            commentsDiv.appendChild(commentElementDiv)
+                        }
+                    })
+
+                postDetailsDiv.append(postDetailsIdDiv, postDetailsTitleDiv, postDetailsBodyDiv, commentsDiv)
                 postContainerDiv.appendChild(postDetailsDiv)
             }
         }

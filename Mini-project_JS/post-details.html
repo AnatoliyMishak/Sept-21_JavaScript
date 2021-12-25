@@ -20,9 +20,49 @@
     .postContainer{
         width: 1200px;
         box-sizing: border-box;
-        border: 5px solid cornflowerblue;
+        border: 5px solid #4be51b;
         border-radius: 10px;
-        background: palegoldenrod;
+        background: #D6F69AFF;
+    }
+    .postDetailsId, .postDetailsTitle{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .postDetailsBody{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin: 20px 300px;
+        border: 5px solid lemonchiffon;
+        box-sizing: border-box;
+        border-radius: 20px;
+        background: #f3b976;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        cursor: pointer;
+    }
+
+    .commentsDiv{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .commentElement{
+        border: 5px solid lightgoldenrodyellow;
+        box-sizing: border-box;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+        height: 250px;
+        margin: 29px;
+        padding: 5px;
+        background: lightskyblue;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        cursor: pointer;
+    }
+    .commentElement:hover{
+        transition: 2s;
+        transform: rotateY(6grad);
     }
 
 </style>
